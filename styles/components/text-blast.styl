@@ -1,0 +1,17 @@
+.h1
+  line-height 1.2
+  overflow hidden
+  .blast
+    display inline-block
+    transition all .5s
+    transform translateY(2rem)
+  &--hidden
+    .blast
+      opacity 0
+  &--visible
+    .blast
+      opacity 1
+      transform none
+
+.basic-animation
+  opacity 0

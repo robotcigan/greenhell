@@ -935,6 +935,14 @@ p {
   top: 0;
   width: 100%;
 }
+.hero__rectangle {
+  background-color: #010103;
+  height: 100vh;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
 .hero__align {
   -ms-flex-align: center;
   align-items: center;
@@ -971,6 +979,23 @@ p {
   opacity: 0;
 }
 .h1--visible .blast {
+  opacity: 1;
+  -ms-transform: none;
+  transform: none;
+}
+.hero__description {
+  overflow: hidden;
+}
+.hero__description .blast {
+  display: inline-block;
+  transition: all 0.5s;
+  -ms-transform: translateY(2rem);
+  transform: translateY(2rem);
+}
+.hero__description--hidden .blast {
+  opacity: 0;
+}
+.hero__description--visible .blast {
   opacity: 1;
   -ms-transform: none;
   transform: none;
